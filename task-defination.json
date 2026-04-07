@@ -1,4 +1,3 @@
-
 {
   "taskDefinitionArn": "arn:aws:ecs:us-west-1:237494381384:task-definition/project-task:1",
   "containerDefinitions": [
