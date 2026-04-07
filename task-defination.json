@@ -1,7 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:237494381384:task-definition/project-task:1",
-    "containerDefinitions": [
-        {
+  "family": "shiva",
+  "taskRoleArn": "arn:aws:ecs:us-west-1:237494381384:task/project-cluster/07199c4556ea4b17bced0d4e62522068",
+  "executionRoleArn": "arn:aws:iam::509064165318:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
             "name": "container",
             "image": "237494381384.dkr.ecr.us-west-1.amazonaws.com/amitha16@sha256:528cfacb72e59a6b6604018eba88e6279675613a2ac56c5771a74263529ecf45",
             "cpu": 0,
