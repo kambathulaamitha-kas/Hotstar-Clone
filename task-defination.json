@@ -1,8 +1,3 @@
-- name: Checkout code
-  uses: actions/checkout@v4
-- name: Update ECS Task Definition
-  run: |
-    sed -i "s|237494381384.dkr.ecr.*|$IMAGE_URI|g" task-definition.json
 {
     "taskDefinitionArn": "arn:aws:ecs:us-west-1:237494381384:task-definition/project-task:1",
     "containerDefinitions": [
