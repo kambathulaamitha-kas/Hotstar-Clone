@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:237494381384:task-definition/project-task:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:237494381384:task-definition/amitha:1",
     "containerDefinitions": [
         {
-            "name": "container",
-            "image": "237494381384.dkr.ecr.us-west-1.amazonaws.com/amitha16@sha256:528cfacb72e59a6b6604018eba88e6279675613a2ac56c5771a74263529ecf45",
+            "name": "project-6",
+            "image": "237494381384.dkr.ecr.us-west-1.amazonaws.com/amitha16@sha256:1da5e196edd6bdc1fd6642aec2f63930bae357cd6a4dd3e28358027700b4cf97",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "container-80-tcp",
+                    "name": "8000",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/project-task",
+                    "awslogs-group": "/ecs/amitha",
                     "awslogs-create-group": "true",
                     "awslogs-region": "us-west-1",
                     "awslogs-stream-prefix": "ecs"
@@ -33,8 +33,7 @@
             "systemControls": []
         }
     ],
-    "family": "project-task",
-    "taskRoleArn": "arn:aws:iam::237494381384:role/ecsTaskExecutionRole",
+    "family": "amitha",
     "executionRoleArn": "arn:aws:iam::237494381384:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 1,
@@ -55,9 +54,6 @@
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -87,7 +83,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2026-04-07T07:24:47.488Z",
+    "registeredAt": "2026-04-07T15:59:29.645Z",
     "registeredBy": "arn:aws:iam::237494381384:root",
     "enableFaultInjection": false,
     "tags": []
