@@ -66,9 +66,9 @@ jobs:
           cat task-definition.json > new-task.json
       
       - name: Deploy to Amazon ECS
-        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        uses: aws-actions/amazon-ecs-task-definition.json@v2
         with:
-          task-definition: new-task.json
+          task-definition: task-defination.json
           service: ${{ secrets.ECS_SERVICE }}
           cluster: ${{ secrets.ECS_CLUSTER }}
           wait-for-service-stability: true 
